@@ -105,3 +105,20 @@ here || means if any one condition is true then apply the logic
 . array_name.unshift(element_name), if we want to add name again in that array
 . array_splice , from this method we will add or remove the element from that array , this method is mutable
 . array_slice , 
+. there is concept of copy in array , 
+
+1. Shallow Copy :
+. using a new varibale we just take the reference of the original array and then print it using console
+. there is a drawback , and that is if we make changes in the copy , so the changes also reflect in the original array
+. thats why it is called Shallow , i.e it copy the whole array from the top
+
+2. Deep Copy :
+. in this copy we perform these steps:
+ array > string > copy of string > array
+. if we make the changes on the new variable , it doesn't make the changes in the  origonal 
+. in shallow copy , it copy the whole array from the top
+. in this copy :
+. in this copy there is benefit and that is it copy the orignal array and if we push on the copy it does
+  not make any change to the original one
+. JSON.stringify and JSON.parse both methods are memory intensive
+                    
