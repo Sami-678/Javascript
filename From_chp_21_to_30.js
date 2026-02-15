@@ -220,26 +220,39 @@ console.log(myFractional)
 // Game
 
 // making of a head and tails game using the loop ,math.random , if else , alert and prompt
+// total score is the score of the user , also its inital value is 0  , and increase by the system when user get score
 let totalScore = 0;
+// total target
 const target = 70;
 
+// loop , in while loop we just gave the condition in the round brackets 
 while (totalScore < target) {
-  const userNumber = +prompt("Enter your Number");
-
+//  takes user input 
+  const userNumber = Number(prompt("Enter your Number"));
+// make varibale for random function 
   const randomNumber = Math.random();
+  // as score limit in one time is btw 1 to 6
+  // as we know this function no generates the n btw 1 and 0
   const computerNumber = Math.ceil(randomNumber * 6);
+  // show alert of computer number
   alert("Computer number is : " + computerNumber);
-
+// make a condition 
+// if user input and computer genrated numbers are matched  after save it in a variable 
+//then apply condition on the variable if condition is true , i.e user input and computer numbers are matched then wicket is taken and then user is out  
   const isWicket = userNumber === computerNumber;
   if (isWicket) {
     alert("Ohho, Out by Computer (Dumb Machine)");
     break;
-  } else {
+  }
+  // if no matched 
+  // then increase 1 in the total score
+
+  else {
     totalScore += userNumber;
     if (totalScore >= target) {
       alert("Hurrrayy! You won");
     } else {
-      alert("Your total is: " + totalScore);
+        alert("Your total is: " + totalScore);
     }
   }
 }
