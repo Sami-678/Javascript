@@ -124,9 +124,9 @@
 // 6
 // or we can also set the date , day etc
 // . we dont use the varibale in d.setFullYear , because , it return a timestamp
- var d = new Date();
- d.setFullYear("2001");
-console.log(d.getFullYear())
+//  var d = new Date();
+//  d.setFullYear("2001");
+// console.log(d.getFullYear())
 // -------------practising date ends----------------
                             //   Chp 35
                            // functions
@@ -151,6 +151,9 @@ console.log(d.getFullYear())
 // tellTime();
 
 
+
+                //       Chp 36 
+                // function (passing them data )
 // 3
 // function of single parameters
 
@@ -248,11 +251,153 @@ console.log(d.getFullYear())
 
 // Calculator();
 
+  
 
+                        //  Chp 37 
+                    // Functions data back from them 
+
+// use of return in the  the function 
+// it shows the result 
+// Difference btw Console and Return 
+// Console (Print): It is used to display a value on the screen for the human user to see, but the computer cannot use that value again.
+
+// Return: It sends the value back to the program’s memory so you can save it in a variable and use it for further calculations.
+
+// function of calculating the sum of 2 numbers 
+//1 first we gave the parameters to the function
+// 2 declare the result variable as the sum of these parameters 
+// 3 retun the result 
+// 4 function close 
+// 5  decleare another variable named total 
+// the work of this variable is simply 
+// Take the answer from this function and save it in a box named 'myTotal' so we can use it later 
+// we can apply any other condition , calcultion in it 
+// ------------------code----------------
+// 1
+// function sum(a, b){
+    //  let result = a + b
+    //   return result
+    // }
+    // let total = sum(9,2)
+    // console.log(total)
+
+// 2
+//     var name = "Sami";
+// function greet() {
+//      let sayHello = `Hello ${name}`; // Removed the extra '+'
+//      return sayHello;   //Now the data goes "back"
+// }
+// let greetIngs = greet(); // Now greetIngs catches "Hello Sami"
+// console.log(greetIngs);  // Output: Hello Sami
+
+// ------------------code----------------
+
+
+                        // Chp 38
+                    // Local VS Global variable 
+//. local variable are those which are only accessible in a block of code
+// . Global variable are those which are accessible all over the code   
+// . let, const are block level code , they have local scope 
+// . var are global level variable
+// . if let  , const are defined in a block of code , then we can't access these , outside there domain or that particular block of code
+// . if variable , are defined in a function , then we can use it anywhere in that func either the function contains for loop  , if-else , etc
+
+    // Example of  Global Variable and Local variable 
+//  ----------code----------------
+// function scopeCheck() {
+//     if (true) {
+//         var functionVariable = "Hello ! I am var ,accessible outside the if statement";
+//         let blockVariable = "Hello ! I can't access outdside the if statement";  
+//         console.log(blockVariable); // it works only inside the if statement
+//     }
+    
+//     console.log(functionVariable); // it works  
+//     // console.log(blockVariable); // not defined
+// }
+
+// scopeCheck();
+//  ----------code----------------
+
+
+                    //  Chp 39 
+                // Switch Statement 
+//. switch statement is just like if-else statement , but 
+// . there is slighter difference and it is , if the required case is at the top and we got our desired answer then , according to if-else , when the condition got true the if-else loop becomes stop , but in the case of  this switch case , it does not stop , untill and unless we have to put the break 
+
+
+// 1. switch case of status i.e hungry , tired , thirsty 
+// with out using the  break statement
+// this result in the no benefit  
+// let currentStatus = "hungry";
+// switch (currentStatus) {
+//   case "hungry":
+//     console.log("1. Go to the kitchen");
+//     // No break here!
+//   case "thirsty":
+//     console.log("2. Pour some water");
+//     // No break here!
+//   case "tired":
+//     console.log("3. Take a nap");
+// }
+
+                  // with Break
+
+// -----------------Code----------------------
+// let currentStatus = prompt("Enter your current state: hungry, thirsty, or tired");
+
+// if (currentStatus) {
+//     currentStatus = currentStatus.toLowerCase();
+// }
+
+// switch (currentStatus) {
+//   case "hungry":
+//     console.log("1. Go to the kitchen");
+//     break; 
+//   case "thirsty":
+//     console.log("2. Pour some water");
+//     break;
+//   case "tired":
+//     console.log("3. Take a nap");
+//     break;
+  
+// }
+
+// -----------------Code----------------------
+                    // Chp 40 
+                    // switch complete the statement
+// make a switch statement , to enter the number from 0 to 6 according to GMT Date() , method 
+
+let currentDay = Number(prompt("Enter your current day : 0-6"));
+
+switch (currentDay) {
+  case 0:
+    console.log("Monday");
+    break; 
+  case 1:
+    console.log("Tuesday");
+    break;
+  case 2:
+    console.log("Wednesday");
+    break;
+  case 3:
+    console.log("Thursday");
+    break;
+  case 4:
+    console.log("Friday");
+    break;
+  case 5:
+    console.log("Saturday");
+    break;
+  case 6:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid input! Please enter 0 to 6");  
+}
 
 
 // -------------questions---------------
-                     // Questions about date 
+         // Questions about date 
 // 1. why we convert the date into string 
 // Ans :
 // A Date object in JavaScript is a complex object,
@@ -270,4 +415,4 @@ console.log(d.getFullYear())
 // Does NOT change original array
 // Returns a new array
 // Safe method
-// -------------must ask these questions ends---------------
+// -------------questions ends---------------

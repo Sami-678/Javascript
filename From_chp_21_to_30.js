@@ -12,7 +12,7 @@
 
 // 2
 
-// apply condtioion on the user enter email
+// apply condition on the user enter email
 const email = "samitariq591@gmail.com";
 // const userEnterEmail = prompt("Enter Your Email: ");
 // if(userEnterEmail === email) alert("Login Successfully")
@@ -26,9 +26,9 @@ const email = "samitariq591@gmail.com";
 // console.log(emailCopy)
 
 // . correct the name starts from lower case and end with uppercase
-const name = "mouTASSIm"
-const firstLetter = name[0];
-const lastLetter = name.slice(1) // ending parameter is optional
+// const name = "mouTASSIm"
+// const firstLetter = name[0];
+// const lastLetter = name.slice(1) // ending parameter is optional
 // const upper = firstLetter.toUpperCase()
 // const lower = lastLetter.toLowerCase()
 // const final = upper + lower ;
@@ -57,7 +57,7 @@ const lastLetter = name.slice(1) // ending parameter is optional
                     //    CHP 23 
                     // Finding segements
                         
-const text = "the quick brown fox jumps over a lazy queen dog";
+// const text = "the quick brown fox jumps over a lazy queen dog";
 // A)
 // finding total words in this text
 // let totalWords = 0;
@@ -81,8 +81,7 @@ const text = "the quick brown fox jumps over a lazy queen dog";
 // console.log(text[2]) // e is at the index of 2
 
                 //    Chp 24 
-                // Finding the character at the location of 
-
+          // Finding the character at the location of 
 // indexof and last indexof always return the number , so if we place ay letter that is not present in that text then it shows -1
 
 // const notMention = text.indexOf("this")
@@ -146,9 +145,9 @@ const text = "the quick brown fox jumps over a lazy queen dog";
 
 // 4)
 // also from 1 to 100
-// let decNumber1 = Math.random();
-// decNumber1 = decNumber1.toFixed(1)
-// console.log(decNumber1*100)
+let decNumber1 = Math.random();
+decNumber1 = decNumber1.toFixed(1)
+console.log(decNumber1*100)
 
                         //   CHP 27 
                 // Generating Random Number
@@ -191,8 +190,8 @@ const text = "the quick brown fox jumps over a lazy queen dog";
 
 // 2)
 // to convert the decimal string into float 
-var myFractional = parseFloat("1.9999");
-console.log(myFractional)
+// var myFractional = parseFloat("1.9999");
+// console.log(myFractional)
 
                 //  CHP 29
             // converting integer to string 
@@ -221,41 +220,41 @@ console.log(myFractional)
 
 // making of a head and tails game using the loop ,math.random , if else , alert and prompt
 // total score is the score of the user , also its inital value is 0  , and increase by the system when user get score
-let totalScore = 0;
-// total target
-const target = 70;
+// let totalScore = 0;
+// // total target
+// const target = 70;
 
-// loop , in while loop we just gave the condition in the round brackets 
-while (totalScore < target) {
-//  takes user input 
-  const userNumber = Number(prompt("Enter your Number"));
-// make varibale for random function 
-  const randomNumber = Math.random();
-  // as score limit in one time is btw 1 to 6
-  // as we know this function no generates the n btw 1 and 0
-  const computerNumber = Math.ceil(randomNumber * 6);
-  // show alert of computer number
-  alert("Computer number is : " + computerNumber);
-// make a condition 
-// if user input and computer genrated numbers are matched  after save it in a variable 
-//then apply condition on the variable if condition is true , i.e user input and computer numbers are matched then wicket is taken and then user is out  
-  const isWicket = userNumber === computerNumber;
-  if (isWicket) {
-    alert("Ohho, Out by Computer (Dumb Machine)");
-    break;
-  }
-  // if no matched 
-  // then increase 1 in the total score
+// // loop , in while loop we just gave the condition in the round brackets 
+// while (totalScore < target) {
+// //  takes user input 
+//   const userNumber = Number(prompt("Enter your Number"));
+// // make varibale for random function 
+//   const randomNumber = Math.random();
+//   // as score limit in one time is btw 1 to 6
+//   // as we know this function no generates the n btw 1 and 0
+//   const computerNumber = Math.ceil(randomNumber * 6);
+//   // show alert of computer number
+//   alert("Computer number is : " + computerNumber);
+// // make a condition 
+// // if user input and computer genrated numbers are matched  after save it in a variable 
+// //then apply condition on the variable if condition is true , i.e user input and computer numbers are matched then wicket is taken and then user is out  
+//   const isWicket = userNumber === computerNumber;
+//   if (isWicket) {
+//     alert("Ohho, Out by Computer (Dumb Machine)");
+//     break;
+//   }
+//   // if no matched 
+//   // then increase 1 in the total score
 
-  else {
-    totalScore += userNumber;
-    if (totalScore >= target) {
-      alert("Hurrrayy! You won");
-    } else {
-        alert("Your total is: " + totalScore);
-    }
-  }
-}
+//   else {
+//     totalScore += userNumber;
+//     if (totalScore >= target) {
+//       alert("Hurrrayy! You won");
+//     } else {
+//         alert("Your total is: " + totalScore);
+//     }
+//   }
+// }
 
 
 
