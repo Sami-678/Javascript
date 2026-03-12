@@ -193,5 +193,5 @@ let btn = document.querySelector(".btnSet");
 
 btn.addEventListener("click", () => {
     let value = inputValue.value = "Hello World";
-    console.log(value); // prints "Hello World" ✅
+    console.log(value); 
 });
